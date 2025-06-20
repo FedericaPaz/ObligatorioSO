@@ -38,9 +38,9 @@ int main (){
         pthread_create(&hilos[i], NULL, hilo_suma, &pos[i]);
     }
 
-    for(int i = 0; i<3; i++){
-        pthread_join(hilos[i], NULL);
-    }
+    pthread_join(hilos[0], NULL);
+    pthread_join(hilos[1], NULL);
+    pthread_join(hilos[2], NULL);
 
     pthread_create(&hilos[3], NULL, hilo_mult, NULL);
     pthread_join(hilos[3], NULL);
