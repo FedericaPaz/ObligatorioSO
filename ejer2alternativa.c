@@ -157,8 +157,21 @@ int main() {
   pthread_create(&hilos[13], NULL, func_CB, NULL);
   pthread_create(&hilos[14], NULL, func_SN, NULL);
 
-  for (int i = 0; i < 15; i++) { 
-    pthread_join(hilos[i], NULL); 
-  }
+  pthread_join(hilos[0], NULL); 
+  pthread_join(hilos[1], NULL); 
+  pthread_join(hilos[2], NULL); 
+  pthread_join(hilos[3], NULL); 
+  pthread_join(hilos[4], NULL); 
+  pthread_join(hilos[5], NULL); 
+  pthread_join(hilos[6], NULL); 
+  pthread_join(hilos[7], NULL); 
+  pthread_join(hilos[8], NULL); 
+  pthread_join(hilos[9], NULL); 
+  pthread_join(hilos[10], NULL); 
+  pthread_join(hilos[11], NULL); 
+  pthread_join(hilos[12], NULL); 
+  pthread_join(hilos[13], NULL); 
+  pthread_join(hilos[14], NULL); 
+
   return 0;
 }
